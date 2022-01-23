@@ -1,7 +1,7 @@
 import { api } from './http';
 import Notifier from './Notifier.svelte';
 
-const config = "CONFIG_TO_REPLACE" as any as (Config | string);
+const config = (window as any).gallantConfig = "CONFIG_TO_REPLACE" as any as (Config | string);
 
 export interface IdentifyOpts {
 	name?: string;
