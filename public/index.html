@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
+
+	<script defer src='/build/bundle.js'></script>
+	<script>
+		window.onload = function () {
+			window.gallant = new Gallant({
+				productId: '94563da2-997d-4968-b041-bd2ee54e4d44'
+			});
+			window.gallant.identify('joseph@simmsreeve.com', { name: 'Joe Reeve', email: 'joseph@simmsreeve.com' });
+		}
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>
